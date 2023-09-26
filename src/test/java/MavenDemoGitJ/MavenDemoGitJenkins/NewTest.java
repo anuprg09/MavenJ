@@ -17,7 +17,7 @@ public class NewTest {
   @Test
   public void checkTest() {
 	  driver.findElement(By.name("q")).sendKeys("This is Demo");
-	  assertEquals("you", "You");
+	  assertEquals("you", "you");
   }
   @BeforeTest
   public void beforeTest() {
