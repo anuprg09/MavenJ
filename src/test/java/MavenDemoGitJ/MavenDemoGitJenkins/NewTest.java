@@ -1,7 +1,13 @@
 package MavenDemoGitJ.MavenDemoGitJenkins;
 
 import org.testng.annotations.Test;
+
+import dev.failsafe.internal.util.Assert;
+
 import org.testng.annotations.BeforeTest;
+
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,6 +18,7 @@ public class NewTest {
   @Test
   public void checkTest() {
 	  driver.findElement(By.name("q")).sendKeys("This is Demo");
+	  assertEquals("my", "You");
   }
   @BeforeTest
   public void beforeTest() {
