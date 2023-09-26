@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyLoginSuite" parallel="tests" thread-count="10">
+  <test name="MyLoginTestInChrome">
+    <classes>
+      <class name="MavenDemoGitJ.MavenDemoGitJenkins.NewTest"/>
+      <!-- <parameter name="url" value="http://eaapp.somee.com"/>
+      <parameter name="browser" value="chrome"/> -->
+    </classes>
+  </test>
+  </suite>
